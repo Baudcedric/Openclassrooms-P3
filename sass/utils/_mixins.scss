@@ -1,0 +1,22 @@
+@mixin shadow($colour: $shadow-colour){
+    box-shadow: 0px 5px 10px 0px $colour;
+}
+
+@mixin ronded($value: map-get($ronded-size, info)){
+    border-radius: $value;
+}
+
+@mixin text_font{
+    font-family:'Roboto', sans-serif;
+}
+
+@mixin title_font{
+    font-family: 'Shrikhand', cursive;
+    @include text-size(stdIcon);
+    font-weight: 400;
+    margin-top: 0;
+}
+
+@mixin text-size($value: stdText){
+    font-size: map-get($txt-size, $value);
+}

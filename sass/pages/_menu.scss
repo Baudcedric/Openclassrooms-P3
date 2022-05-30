@@ -1,0 +1,107 @@
+header{
+
+}
+
+.header_picture{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+#picture-delice{
+    background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+#picture-enchantee{
+    background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+#picture-francaise{
+    background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+#picture-palette{
+    background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+.main-menu{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px 30px 0 0;
+    margin-top: -50px;
+    background-color: $background-colour;
+    padding: 25px 12px 0 12px;
+    .main-title{
+        display: flex;
+        h1{
+            margin-top: 0;
+            font-family: 'Shrikhand', cursive;
+            font-weight: 400;
+            @include text-size(majTitle);
+        }
+        div{
+            display: inline-block;
+            margin-left: 10%;
+        };
+    }
+}
+
+.article-nenu{
+    padding-bottom: 15px;
+    h2{
+        @include text-size();
+        margin-bottom: 5px;
+        font-weight: 400;
+    }
+    .art_title-border{
+        border-top: solid $Tertiary-colour;
+        width: 30px;
+        margin-bottom: 11px;
+    }
+}
+
+.menu-card{
+    opacity: 0;
+    animation-name: menucard;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    border-radius: 12px;
+    margin-bottom: 11px;
+    .menu-card_price{
+        @include text-size(price);
+        font-weight: 600;
+        padding: 0;
+        margin-bottom: 10px;
+        margin-top: auto;
+        margin-right: 5%;
+    }
+}
+@for $i from 0 through 9 {
+    .menu-card--display#{$i} {
+        animation-delay: 200ms*$i;
+    }
+}
+
+@keyframes menucard {
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }   
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+div.card-text{
+    width: 80%;
+    margin-left: 3%;
+    .card-text_title{
+        @include text-size(descript);
+        margin-bottom: 5px;
+    }
+
+    .card-text_info{
+        @include text-size(cardInfo);
+    }
+}
+
+

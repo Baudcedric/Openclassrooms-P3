@@ -1,0 +1,18 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/base";
+@import "./components/buttons";
+@import "./components/card";
+@import "./components/favorite";
+@import "./components/animations";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./pages/homepage";
+@import "./pages/menu";
+
+body{
+    @include text_font();
+    max-width: 300px;
+    margin: 0;
+}
+

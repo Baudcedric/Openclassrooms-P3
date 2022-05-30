@@ -1,0 +1,19 @@
+.btn{
+    border: none;
+    @include ronded($value: map-get($ronded-size, button));
+    @include shadow($colour: darken($shadow-colour, 10%));
+    @include text_font();
+    color: $text-colour;
+    background: linear-gradient($Secondary-colour, $primary-colour);
+    font-size: 13px;
+    padding: 12px;
+    width: 60%;
+}
+
+.btn-home{
+    margin-bottom: 0;
+}
+
+.btn-menu{
+    margin: 15px auto 58px auto;
+}

@@ -1,0 +1,25 @@
+.footer{
+    margin-top: 5px;
+    background-color: lighten(black, 22%);
+    color: $text-colour;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    h2{
+        @include title_font();
+    }
+    p{
+        margin-top: 0;
+        margin-bottom: 5px;
+        @include text-size();
+       
+        i{
+            width: 15px;
+            margin-right: 5px;
+            @include text-size(footerIcon);
+        }
+        a{
+            color: $text-colour;
+        }
+    }
+}

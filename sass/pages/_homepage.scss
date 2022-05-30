@@ -1,0 +1,165 @@
+.nav-location{
+    background-color: $location-colour;
+    padding: 12px 0;
+    p{
+        @include text-size();
+        font-weight: 400;
+        margin: 0;
+        i{
+            margin-right: 2%;
+        }
+    }
+}
+
+.nav-descript{
+    background-color: $background-colour;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    h1{
+        margin: 0 auto 10px auto;
+        width: 70%;
+        @include text-size(title);
+        font-weight: 700;
+    }
+
+    P{
+        margin: 0 auto 30px auto;
+        width: 80%;
+        @include text-size(descript);
+        font-weight: 200;
+    }
+}
+
+.art_title{
+    margin-bottom: 20px;
+    font-weight: 600;
+    @include text-size(title);
+}
+
+.art-work{
+    padding: 20px 5% 35px 5%;
+    background-color: $text-colour;
+}
+
+.work-info {
+    margin-bottom: 20px;
+    .work-info_nb{
+        background-color: $primary-colour;
+        color: $text-colour;
+        @include ronded($value: map-get($ronded-size, button));
+        width: 20px;
+        height: 20px;
+        float: left;
+        margin-top: 18px;
+        span{
+            display: block;
+            @include text-size();
+            padding-top: 3px;
+        }
+    }
+    .work-info_text{
+        background-color: $background-colour;
+        padding: 22px 0;
+        margin: 0 auto 0 10px;
+        @include ronded();
+        @include shadow();
+        p{
+            margin: 0;
+            font-weight: 600;
+            @include text-size();
+            i {
+                margin-left: 7%;
+                margin-right: 7%;
+                color: lighten(black, 50%);
+                @include text-size(stdIcon);
+            }
+        }
+    }
+    .work-info_text.work-info_text--third{
+        background-color: lighten($primary-colour, 35%);
+        i{
+            color: $primary-colour;
+        }
+    }
+}
+
+
+
+.art-rest{
+    background-color: $background-colour;
+    padding: 20px 5% 35px 5%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        div h3{
+            color: red;
+        }
+    }
+}
+.rest-card{
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    img{
+        @include ronded($value: map-get($ronded-size, img));
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        object-position: 50% 63%;
+        display: block;
+    }
+    div{
+        h3{
+            margin-bottom: 5px;
+            @include text-size(stdIcon);
+        }
+        p{
+            @include text-size();
+            font-weight: 300;
+        }
+    }
+    i{
+        margin: 15px 5% auto auto;
+    }
+}
+
+/*.rest-card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    @include ronded();
+    @include shadow();
+    background-color: $text-colour;
+    margin-bottom: 15px;
+    img{
+        @include ronded($value: map-get($ronded-size, img));
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        object-position: 50% 63%;
+        display: block;
+    }
+    div{
+        margin-left: 5%;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        h3{
+            margin-top: 0;
+            margin-bottom: 5px;
+            @include text-size(stdIcon);
+        }
+        p{
+            margin-top: 0;
+            margin-bottom: 0;
+            @include text-size();
+            font-weight: 300;
+        }
+    }
+    i{
+        margin: 15px 5% auto auto;
+    }
+}*/
