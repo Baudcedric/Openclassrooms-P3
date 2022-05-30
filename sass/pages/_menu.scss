@@ -65,6 +65,7 @@ header{
     animation-fill-mode: forwards;
     border-radius: 12px;
     margin-bottom: 11px;
+    overflow: hidden;
     .menu-card_price{
         @include text-size(price);
         font-weight: 600;
@@ -73,7 +74,27 @@ header{
         margin-top: auto;
         margin-right: 5%;
     }
+    .menu__checked{
+        width: 0;
+        transition: width 1000ms;
+        transform-origin: 100% 50%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        background-color: green;
+        overflow: hidden;
+        i {
+            font-size: 20px;
+            margin: auto auto auto 15px;
+            color: white;
+            transform: scale(1);
+            transform: rotate(90deg);
+            transition: transform 700ms;
+            transition-delay: 300ms;
+        }
+    }
 }
+
 @for $i from 0 through 9 {
     .menu-card--display#{$i} {
         animation-delay: 200ms*$i;
@@ -94,14 +115,19 @@ header{
 div.card-text{
     width: 80%;
     margin-left: 3%;
+    transition: width 1000ms;
     .card-text_title{
         @include text-size(descript);
         margin-bottom: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .card-text_info{
         @include text-size(cardInfo);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 }
-
-

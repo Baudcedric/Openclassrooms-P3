@@ -1,41 +1,4 @@
-.menu-card .menu__checked{
-    width: 0;
-    transition: width 1000ms;
-    transform-origin: 100% 50%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    //border-radius: 0 15px 15px 0;
-    background-color: green;
-    overflow: hidden;
-    i {
-        font-size: 20px;
-        margin: auto auto auto 15px;
-        color: white;
-        transform: scale(1);
-        transform: rotate(90deg);
-        transition: transform 700ms;
-        transition-delay: 300ms;
-    }
-    
-}
-
-.card-text{
-    transition: width 1000ms;
-}
-
-.card-text_title{
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-}
-.card-text_info{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
 .menu-card{
-    overflow: hidden;
     &:hover{
         & > .menu__checked{
             width: 50px;

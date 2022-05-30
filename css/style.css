@@ -60,45 +60,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-.menu-card .menu__checked {
-  width: 0;
-  transition: width 1000ms;
-  transform-origin: 100% 50%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  background-color: green;
-  overflow: hidden;
-}
-.menu-card .menu__checked i {
-  font-size: 20px;
-  margin: auto auto auto 15px;
-  color: white;
-  transform: scale(1);
-  transform: rotate(90deg);
-  transition: transform 700ms;
-  transition-delay: 300ms;
-}
-
-.card-text {
-  transition: width 1000ms;
-}
-
-.card-text_title {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.card-text_info {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.menu-card {
-  overflow: hidden;
-}
 .menu-card:hover > .menu__checked {
   width: 50px;
 }
@@ -277,43 +238,6 @@ a:hover div h3 {
   margin: 15px 5% auto auto;
 }
 
-/*.rest-card{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    @include ronded();
-    @include shadow();
-    background-color: $text-colour;
-    margin-bottom: 15px;
-    img{
-        @include ronded($value: map-get($ronded-size, img));
-        width: 100%;
-        height: 140px;
-        object-fit: cover;
-        object-position: 50% 63%;
-        display: block;
-    }
-    div{
-        margin-left: 5%;
-        margin-right: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        h3{
-            margin-top: 0;
-            margin-bottom: 5px;
-            @include text-size(stdIcon);
-        }
-        p{
-            margin-top: 0;
-            margin-bottom: 0;
-            @include text-size();
-            font-weight: 300;
-        }
-    }
-    i{
-        margin: 15px 5% auto auto;
-    }
-}*/
 .header_picture {
   width: 100%;
   height: 230px;
@@ -381,6 +305,7 @@ a:hover div h3 {
   animation-fill-mode: forwards;
   border-radius: 12px;
   margin-bottom: 11px;
+  overflow: hidden;
 }
 .menu-card .menu-card_price {
   font-size: 12px;
@@ -389,6 +314,25 @@ a:hover div h3 {
   margin-bottom: 10px;
   margin-top: auto;
   margin-right: 5%;
+}
+.menu-card .menu__checked {
+  width: 0;
+  transition: width 1000ms;
+  transform-origin: 100% 50%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: green;
+  overflow: hidden;
+}
+.menu-card .menu__checked i {
+  font-size: 20px;
+  margin: auto auto auto 15px;
+  color: white;
+  transform: scale(1);
+  transform: rotate(90deg);
+  transition: transform 700ms;
+  transition-delay: 300ms;
 }
 
 .menu-card--display0 {
@@ -444,13 +388,20 @@ a:hover div h3 {
 div.card-text {
   width: 80%;
   margin-left: 3%;
+  transition: width 1000ms;
 }
 div.card-text .card-text_title {
   font-size: 14px;
   margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 div.card-text .card-text_info {
   font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 body {
