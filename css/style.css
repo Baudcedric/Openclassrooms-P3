@@ -12,6 +12,7 @@
   font-size: 13px;
   padding: 12px;
   width: 60%;
+  transition: transform 400ms;
 }
 
 .btn-home {
@@ -68,6 +69,10 @@
 }
 .menu-card:hover > .card-text {
   width: calc(100% - 110px);
+}
+
+.btn:hover {
+  transform: scale(1.15);
 }
 
 header .header_logo {
@@ -210,13 +215,15 @@ a {
   text-decoration: none;
   color: black;
 }
-a:hover div h3 {
-  color: red;
-}
 
 .rest-card {
-  flex-wrap: wrap;
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px #E0E0E0;
   margin-bottom: 15px;
+  background-color: white;
+  height: 198px;
 }
 .rest-card img {
   border-radius: 15px 15px 0 0;
@@ -226,15 +233,45 @@ a:hover div h3 {
   object-position: 50% 63%;
   display: block;
 }
-.rest-card div h3 {
+.rest-card .rest-card__new {
+  display: inline;
+  position: relative;
+  top: -188px;
+  right: calc(-100% + 75px);
+  margin: 0;
+  padding: 6px 10px 6px 10px;
+  background-color: #99E2D0;
+  height: 12px;
+  font-size: 12px;
+  color: #278870;
+  font-weight: 600;
+}
+.rest-card .card-text {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  height: 58px;
+}
+.rest-card .card-text div {
+  margin-left: 5%;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.rest-card .card-text div h3 {
+  margin-top: 0;
   margin-bottom: 5px;
   font-size: 15px;
 }
-.rest-card div p {
+.rest-card .card-text div p {
   font-size: 13px;
   font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.rest-card i {
+.rest-card .card-text i {
   margin: 15px 5% auto auto;
 }
 
@@ -322,7 +359,7 @@ a:hover div h3 {
   margin: 0;
   padding: 0;
   display: flex;
-  background-color: green;
+  background-color: #99E2D0;
   overflow: hidden;
 }
 .menu-card .menu__checked i {
@@ -406,7 +443,6 @@ div.card-text .card-text_info {
 
 body {
   font-family: "Roboto", sans-serif;
-  max-width: 300px;
   margin: 0;
 }
 
