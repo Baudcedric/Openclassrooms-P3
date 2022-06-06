@@ -51,22 +51,18 @@
   text-align: center;
   font-size: 20px;
   color: white;
-  text-shadow: 1px 0px 0px black, 0.540302px 0.841471px 0px black, -0.416147px 0.909297px 0px black, -0.989992px 0.14112px 0px black, -0.653644px -0.756802px 0px black, 0.283662px -0.958924px 0px black, 0.96017px -0.279415px 0px black;
-}
-.favorite::before {
   height: 0;
   display: block;
   transition: height 1000ms;
+  text-shadow: 1px 0px 0px black, 0.540302px 0.841471px 0px black, -0.416147px 0.909297px 0px black, -0.989992px 0.14112px 0px black, -0.653644px -0.756802px 0px black, 0.283662px -0.958924px 0px black, 0.96017px -0.279415px 0px black;
 }
 
 .favorite:hover {
   cursor: pointer;
-}
-.favorite:hover::before {
   text-shadow: none;
   height: 25px;
   background: linear-gradient(20deg, #FF79DA, #9356DC);
-  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 
