@@ -14,13 +14,14 @@
 
 .btn{
     &:hover{
-        transform: scale(1.15);
+        background: linear-gradient(lighten($Secondary-colour, 5%), lighten($primary-colour, 5%));
+        box-shadow: 0px 10px 10px 0px darken($shadow-colour, 10%);
     }
 }
 
 @keyframes spiner_rotate {
     to{
-        transform: rotate(3turn);
+        transform: rotate(2turn);
     }
     
 }

@@ -3,7 +3,7 @@
     opacity: 0;
     overflow: hidden;
     animation-name: display_content;
-    animation-delay: 3000ms;
+    animation-delay: 2000ms;
     animation-fill-mode: forwards;
 }
 
@@ -15,7 +15,7 @@
     position: absolute;
     top: 0;
     animation-name: hide_loading;
-    animation-delay: 3000ms;
+    animation-delay: 2000ms;
     animation-fill-mode: forwards;
     justify-content: center;
     .spiner{
@@ -27,7 +27,7 @@
         border-top: 25px solid $Tertiary-colour;
         animation-name: spiner_rotate;
         animation-timing-function: linear;
-        animation-duration: 3000ms;
+        animation-duration: 2000ms;
     }
 }
 

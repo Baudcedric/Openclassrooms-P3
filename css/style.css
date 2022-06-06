@@ -78,12 +78,13 @@
 }
 
 .btn:hover {
-  transform: scale(1.15);
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0px 10px 10px 0px #c7c7c7;
 }
 
 @keyframes spiner_rotate {
   to {
-    transform: rotate(3turn);
+    transform: rotate(2turn);
   }
 }
 @keyframes hide_loading {
@@ -151,7 +152,7 @@ header div a {
   opacity: 0;
   overflow: hidden;
   animation-name: display_content;
-  animation-delay: 3000ms;
+  animation-delay: 2000ms;
   animation-fill-mode: forwards;
 }
 
@@ -163,7 +164,7 @@ header div a {
   position: absolute;
   top: 0;
   animation-name: hide_loading;
-  animation-delay: 3000ms;
+  animation-delay: 2000ms;
   animation-fill-mode: forwards;
   justify-content: center;
 }
@@ -176,7 +177,7 @@ header div a {
   border-top: 25px solid #99E2D0;
   animation-name: spiner_rotate;
   animation-timing-function: linear;
-  animation-duration: 3000ms;
+  animation-duration: 2000ms;
 }
 
 .nav-location {
