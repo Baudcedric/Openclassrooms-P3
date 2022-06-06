@@ -12,7 +12,8 @@
 }
 
 .favorite:hover{
-   &::before{
+    cursor: pointer;
+    &::before{
         text-shadow: none;
         height: 25px;
         background: linear-gradient(20deg, $Secondary-colour, $primary-colour);

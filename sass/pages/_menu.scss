@@ -67,6 +67,9 @@ header{
     border-radius: 12px;
     margin-bottom: 11px;
     overflow: hidden;
+    &:hover{
+        cursor: pointer;
+    }
     .menu-card_price{
         @include text-size(price);
         font-weight: 600;
@@ -99,17 +102,6 @@ header{
 @for $i from 0 through 9 {
     .menu-card--display#{$i} {
         animation-delay: 200ms*$i;
-    }
-}
-
-@keyframes menucard {
-    0%{
-        opacity: 0;
-        transform: translateY(20px);
-    }   
-    100%{
-        transform: translateY(0);
-        opacity: 1;
     }
 }
 

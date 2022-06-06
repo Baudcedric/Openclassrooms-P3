@@ -59,6 +59,9 @@
   transition: height 1000ms;
 }
 
+.favorite:hover {
+  cursor: pointer;
+}
 .favorite:hover::before {
   text-shadow: none;
   height: 25px;
@@ -78,6 +81,7 @@
 }
 
 .btn:hover {
+  cursor: pointer;
   background: linear-gradient(#ff93e1, #a16be0);
   box-shadow: 0px 10px 10px 0px #c7c7c7;
 }
@@ -98,6 +102,16 @@
   to {
     overflow: auto;
     height: auto;
+    opacity: 1;
+  }
+}
+@keyframes menucard {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -404,6 +418,9 @@ a {
   margin-bottom: 11px;
   overflow: hidden;
 }
+.menu-card:hover {
+  cursor: pointer;
+}
 .menu-card .menu-card_price {
   font-size: 12px;
   font-weight: 600;
@@ -472,16 +489,6 @@ a {
   animation-delay: 1800ms;
 }
 
-@keyframes menucard {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 div.card-text {
   width: 80%;
   margin-left: 3%;
