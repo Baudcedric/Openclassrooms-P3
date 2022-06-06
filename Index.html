@@ -12,10 +12,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header class="center-text">
+	<div class="loading">
+		<div class="spiner"></div>
+	</div>
+	<header class="center-text hidden">
 		<img class="header_logo" src="./images/logo/ohmyfood@2x.svg">
 	</header>
-	<nav>
+	<nav class="hidden">
 		<div class="nav-location center-text">
 			<p><i class="fa-solid fa-location-dot"></i>  Paris, Belleville</p>
 		</div>
@@ -25,7 +28,7 @@
 			<button class="btn btn-home">Explorer nos restaurants</button>
 		</div>
 	</nav>
-	<main>
+	<main class="hidden">
 		<article class="art-work">
 			<h2 class="art_title">Fonctionnement</h2>
 			<div class="work-info">
@@ -98,7 +101,7 @@
 
 		</article>
 	</main>
-	<footer class="footer">
+	<footer class="footer hidden">
 		<h2>ohmyfood</h2>
 		<p><i class="fa-solid fa-utensils"></i><a href="#">Proposer un restaurant</a></p>
 		<p><i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a></p>

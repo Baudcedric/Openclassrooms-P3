@@ -1,3 +1,36 @@
+.hidden{
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    animation-name: display_content;
+    animation-delay: 3000ms;
+    animation-fill-mode: forwards;
+}
+
+.loading{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    animation-name: hide_loading;
+    animation-delay: 3000ms;
+    animation-fill-mode: forwards;
+    justify-content: center;
+    .spiner{
+        margin-top: 200px;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        border: 25px solid $location-colour;
+        border-top: 25px solid $Tertiary-colour;
+        animation-name: spiner_rotate;
+        animation-timing-function: linear;
+        animation-duration: 3000ms;
+    }
+}
+
 .nav-location{
     background-color: $location-colour;
     padding: 12px 0;

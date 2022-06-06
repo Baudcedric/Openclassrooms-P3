@@ -81,6 +81,25 @@
   transform: scale(1.15);
 }
 
+@keyframes spiner_rotate {
+  to {
+    transform: rotate(3turn);
+  }
+}
+@keyframes hide_loading {
+  to {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+}
+@keyframes display_content {
+  to {
+    overflow: auto;
+    height: auto;
+    opacity: 1;
+  }
+}
 header .header_logo {
   height: 24px;
   margin: 15px auto 6px auto;
@@ -125,6 +144,39 @@ header div a {
 }
 .footer p a {
   color: white;
+}
+
+.hidden {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  animation-name: display_content;
+  animation-delay: 3000ms;
+  animation-fill-mode: forwards;
+}
+
+.loading {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  animation-name: hide_loading;
+  animation-delay: 3000ms;
+  animation-fill-mode: forwards;
+  justify-content: center;
+}
+.loading .spiner {
+  margin-top: 200px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 25px solid #EAEAEA;
+  border-top: 25px solid #99E2D0;
+  animation-name: spiner_rotate;
+  animation-timing-function: linear;
+  animation-duration: 3000ms;
 }
 
 .nav-location {

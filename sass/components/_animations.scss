@@ -17,3 +17,27 @@
         transform: scale(1.15);
     }
 }
+
+@keyframes spiner_rotate {
+    to{
+        transform: rotate(3turn);
+    }
+    
+}
+
+@keyframes hide_loading {
+    to{
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    
+}
+
+@keyframes display_content {
+    to{
+        overflow: auto;
+        height: auto;
+        opacity: 1;
+    }
+}
