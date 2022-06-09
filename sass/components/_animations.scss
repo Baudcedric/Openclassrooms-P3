@@ -39,7 +39,7 @@
 @keyframes display_content {
     to{
         overflow: auto;
-        height: auto;
+        height: unset;
         opacity: 1;
     }
 }
