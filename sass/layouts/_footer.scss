@@ -5,6 +5,10 @@
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
+    @include tab-only{
+        position: relative;
+        bottom: 100vh;
+    }
     h2{
         @include title_font();
         @include desk-only{

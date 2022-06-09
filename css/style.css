@@ -165,6 +165,12 @@ header div a {
   padding-bottom: 20px;
   padding-left: 20px;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 100vh;
+  }
+}
 .footer h2 {
   font-family: "Shrikhand", cursive;
   font-size: 15px;
