@@ -17,6 +17,12 @@ header{
             display: block;
             width: 10%;
             margin: auto 0 auto 5%;
+
+            i{
+                @include desk-only{
+                    font-size: 19px;
+                }
+            }
         }
     }
 }

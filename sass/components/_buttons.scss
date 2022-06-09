@@ -8,10 +8,8 @@
     font-size: 13px;
     padding: 12px;
     width: 60%;
+    max-width: 300px;
     transition: transform 400ms;
-    @include tab-only{
-       max-width: 300px;
-    }
     @include desk-only{
         font-size: 16px;
     }
