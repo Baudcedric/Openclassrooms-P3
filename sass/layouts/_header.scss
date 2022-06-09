@@ -2,6 +2,9 @@ header{
     .header_logo{
         height: 24px;
         margin: 15px auto 6px auto;
+        @include desk-only{
+            height: 34px;
+        }
     }
     div{
         margin: 15px auto 6px auto;

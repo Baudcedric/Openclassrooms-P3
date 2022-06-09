@@ -20,3 +20,15 @@
 @mixin text-size($value: stdText){
     font-size: map-get($txt-size, $value);
 }
+
+@mixin tab-only {
+    @media screen and (min-width: map-get($breakpoints, tab)){
+        @content;
+    }
+}
+
+@mixin desk-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}

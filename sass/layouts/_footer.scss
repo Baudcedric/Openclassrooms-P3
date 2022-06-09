@@ -7,16 +7,25 @@
     padding-left: 20px;
     h2{
         @include title_font();
+        @include desk-only{
+            font-size: 18px;
+        }
     }
     p{
         margin-top: 0;
         margin-bottom: 5px;
         @include text-size();
+        @include desk-only{
+            font-size: 16px;
+        }
        
         i{
             width: 15px;
             margin-right: 5px;
             @include text-size(footerIcon);
+            @include desk-only{
+                font-size: 13px;
+            }
         }
         a{
             color: $text-colour;

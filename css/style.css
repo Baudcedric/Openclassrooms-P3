@@ -14,6 +14,16 @@
   width: 60%;
   transition: transform 400ms;
 }
+@media screen and (min-width: 768px) {
+  .btn {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 994px) {
+  .btn {
+    font-size: 16px;
+  }
+}
 
 .btn-home {
   margin-bottom: 0;
@@ -56,6 +66,12 @@
   transition: height 1000ms;
   text-shadow: 1px 0px 0px black, 0.540302px 0.841471px 0px black, -0.416147px 0.909297px 0px black, -0.989992px 0.14112px 0px black, -0.653644px -0.756802px 0px black, 0.283662px -0.958924px 0px black, 0.96017px -0.279415px 0px black;
 }
+@media screen and (min-width: 994px) {
+  .favorite {
+    width: 28px;
+    font-size: 23px;
+  }
+}
 
 .favorite:hover {
   cursor: pointer;
@@ -64,6 +80,12 @@
   background: linear-gradient(20deg, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;
+}
+@media screen and (min-width: 994px) {
+  .favorite:hover {
+    width: 28px;
+    font-size: 23px;
+  }
 }
 
 .menu-card:hover > .menu__checked {
@@ -115,6 +137,11 @@ header .header_logo {
   height: 24px;
   margin: 15px auto 6px auto;
 }
+@media screen and (min-width: 994px) {
+  header .header_logo {
+    height: 34px;
+  }
+}
 header div {
   margin: 15px auto 6px auto;
   display: flex;
@@ -143,15 +170,30 @@ header div a {
   font-weight: 400;
   margin-top: 0;
 }
+@media screen and (min-width: 994px) {
+  .footer h2 {
+    font-size: 18px;
+  }
+}
 .footer p {
   margin-top: 0;
   margin-bottom: 5px;
   font-size: 13px;
 }
+@media screen and (min-width: 994px) {
+  .footer p {
+    font-size: 16px;
+  }
+}
 .footer p i {
   width: 15px;
   margin-right: 5px;
   font-size: 10px;
+}
+@media screen and (min-width: 994px) {
+  .footer p i {
+    font-size: 13px;
+  }
 }
 .footer p a {
   color: white;
@@ -170,6 +212,7 @@ header div a {
   overflow: hidden;
   display: flex;
   width: 100%;
+  height: 100vh;
   z-index: 1;
   position: absolute;
   top: 0;
@@ -179,7 +222,6 @@ header div a {
   justify-content: center;
 }
 .loading .spiner {
-  margin-top: 200px;
   width: 80px;
   height: 80px;
   border-radius: 100%;
@@ -199,6 +241,11 @@ header div a {
   font-weight: 400;
   margin: 0;
 }
+@media screen and (min-width: 994px) {
+  .nav-location p {
+    font-size: 16px;
+  }
+}
 .nav-location p i {
   margin-right: 2%;
 }
@@ -214,11 +261,21 @@ header div a {
   font-size: 20px;
   font-weight: 700;
 }
+@media screen and (min-width: 994px) {
+  .nav-descript h1 {
+    font-size: 23px;
+  }
+}
 .nav-descript P {
   margin: 0 auto 30px auto;
   width: 80%;
   font-size: 14px;
   font-weight: 200;
+}
+@media screen and (min-width: 994px) {
+  .nav-descript P {
+    font-size: 17px;
+  }
 }
 
 .art_title {
@@ -226,14 +283,36 @@ header div a {
   font-weight: 600;
   font-size: 20px;
 }
+@media screen and (min-width: 768px) {
+  .art_title {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 994px) {
+  .art_title {
+    font-size: 25px;
+  }
+}
 
 .art-work {
   padding: 20px 5% 35px 5%;
   background-color: white;
 }
+@media screen and (min-width: 768px) {
+  .art-work {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .work-info {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .work-info {
+    width: 30%;
+    margin: auto;
+  }
 }
 .work-info .work-info_nb {
   background-color: #9356DC;
@@ -261,11 +340,21 @@ header div a {
   font-weight: 600;
   font-size: 13px;
 }
+@media screen and (min-width: 994px) {
+  .work-info .work-info_text p {
+    font-size: 16px;
+  }
+}
 .work-info .work-info_text p i {
   margin-left: 7%;
   margin-right: 7%;
   color: gray;
   font-size: 15px;
+}
+@media screen and (min-width: 994px) {
+  .work-info .work-info_text p i {
+    font-size: 15px;
+  }
 }
 .work-info .work-info_text.work-info_text--third {
   background-color: #f2eafb;
@@ -278,6 +367,12 @@ header div a {
   background-color: #F6F6F6;
   padding: 20px 5% 35px 5%;
   display: block;
+}
+@media screen and (min-width: 768px) {
+  .art-rest {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 a {
@@ -294,6 +389,17 @@ a {
   background-color: white;
   height: 198px;
 }
+@media screen and (min-width: 768px) {
+  .rest-card {
+    width: 45%;
+    margin: 40px auto auto auto;
+  }
+}
+@media screen and (min-width: 994px) {
+  .rest-card {
+    height: 304px;
+  }
+}
 .rest-card img {
   border-radius: 15px 15px 0 0;
   width: 100%;
@@ -301,6 +407,11 @@ a {
   object-fit: cover;
   object-position: 50% 63%;
   display: block;
+}
+@media screen and (min-width: 994px) {
+  .rest-card img {
+    height: 240px;
+  }
 }
 .rest-card .rest-card__new {
   display: inline;
@@ -315,6 +426,12 @@ a {
   color: #278870;
   font-weight: 600;
 }
+@media screen and (min-width: 994px) {
+  .rest-card .rest-card__new {
+    top: -283px;
+    right: calc(-100% + 80px);
+  }
+}
 .rest-card .card-text {
   display: flex;
   flex-wrap: wrap;
@@ -322,6 +439,11 @@ a {
   margin-right: 0;
   width: 100%;
   height: 58px;
+}
+@media screen and (min-width: 994px) {
+  .rest-card .card-text {
+    height: 64px;
+  }
 }
 .rest-card .card-text div {
   margin-left: 5%;
@@ -334,11 +456,21 @@ a {
   margin-bottom: 5px;
   font-size: 15px;
 }
+@media screen and (min-width: 994px) {
+  .rest-card .card-text div h3 {
+    font-size: 18px;
+  }
+}
 .rest-card .card-text div p {
   font-size: 13px;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 0;
+}
+@media screen and (min-width: 994px) {
+  .rest-card .card-text div p {
+    font-size: 16px;
+  }
 }
 .rest-card .card-text i {
   margin: 15px 5% auto auto;

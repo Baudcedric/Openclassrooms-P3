@@ -11,6 +11,7 @@
     overflow: hidden;
     display: flex;
     width: 100%;
+    height: 100vh;
     z-index: 1;
     position: absolute;
     top: 0;
@@ -18,8 +19,9 @@
     animation-delay: 2000ms;
     animation-fill-mode: forwards;
     justify-content: center;
+    
     .spiner{
-        margin-top: 200px;
+        //margin-top: 200px;
         width: 80px;
         height: 80px;
         border-radius: 100%;
@@ -38,6 +40,9 @@
         @include text-size();
         font-weight: 400;
         margin: 0;
+        @include desk-only{
+            font-size: 16px;
+        }
         i{
             margin-right: 2%;
         }
@@ -53,6 +58,9 @@
         width: 70%;
         @include text-size(title);
         font-weight: 700;
+        @include desk-only{
+            font-size: 23px;
+        }
     }
 
     P{
@@ -60,6 +68,9 @@
         width: 80%;
         @include text-size(descript);
         font-weight: 200;
+        @include desk-only{
+            font-size: 17px;
+        }
     }
 }
 
@@ -67,15 +78,29 @@
     margin-bottom: 20px;
     font-weight: 600;
     @include text-size(title);
+    @include tab-only{
+        width: 90%;
+    }
+    @include desk-only{
+        font-size: 25px;
+    }
 }
 
 .art-work{
     padding: 20px 5% 35px 5%;
     background-color: $text-colour;
+    @include tab-only{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .work-info {
     margin-bottom: 20px;
+    @include tab-only{
+        width: 30%;
+        margin: auto;
+    }
     .work-info_nb{
         background-color: $primary-colour;
         color: $text-colour;
@@ -89,6 +114,7 @@
             @include text-size();
             padding-top: 3px;
         }
+
     }
     .work-info_text{
         background-color: $background-colour;
@@ -100,11 +126,17 @@
             margin: 0;
             font-weight: 600;
             @include text-size();
+            @include desk-only{
+                font-size: 16px;
+            }
             i {
                 margin-left: 7%;
                 margin-right: 7%;
                 color: lighten(black, 50%);
                 @include text-size(stdIcon);
+                @include desk-only{
+                    font-size: 15px;
+                }
             }
         }
     }
@@ -120,6 +152,10 @@
     background-color: $background-colour;
     padding: 20px 5% 35px 5%;
     display: block;
+    @include tab-only{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 a{
@@ -135,6 +171,14 @@ a{
     margin-bottom: 15px;
     background-color: $text-colour;
     height: 198px;
+    @include tab-only{
+        width: 45%;
+        margin: 40px auto auto auto;
+    }
+    @include desk-only{
+        height: 304px;
+    }
+    
     img{
         @include ronded($value: map-get($ronded-size, img));
         width: 100%;
@@ -142,6 +186,9 @@ a{
         object-fit: cover;
         object-position: 50% 63%;
         display: block;
+        @include desk-only{
+            height: 240px;
+        }
     }
     .rest-card__new{
         display: inline;
@@ -155,6 +202,10 @@ a{
         font-size: 12px;
         color: darken($Tertiary-colour, 40%);
         font-weight: 600;
+        @include desk-only{
+            top: -283px;
+            right: calc(-100% + 80px);
+        }
     }
     .card-text{
         display: flex;
@@ -163,6 +214,9 @@ a{
         margin-right: 0;
         width: 100%;
         height: 58px;
+        @include desk-only{
+            height: 64px;
+        }
         div{
             margin-left: 5%;
             margin-right: auto;
@@ -172,12 +226,18 @@ a{
                 margin-top: 0;
                 margin-bottom: 5px;
                 @include text-size(stdIcon);
+                @include desk-only{
+                    font-size: 18px;
+                }
             }
             p{
                 @include text-size();
                 font-weight: 300;
                 margin-top: 0;
                 margin-bottom: 0;
+                @include desk-only{
+                    font-size: 16px;
+                }
             }
         }
         i{
